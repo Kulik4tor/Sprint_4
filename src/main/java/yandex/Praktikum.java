@@ -5,8 +5,9 @@ import yandex.Account;
 public class Praktikum {
 
     public static void main(String[] args) {
-        String name;
-        Account account = new Account("name");
-        System.out.println(account.checkNameToEmboss());
+        for (String arg : args) {
+            Account account = new Account(arg);
+            System.out.println(account.checkNameToEmboss());
+        }
     }
 }
